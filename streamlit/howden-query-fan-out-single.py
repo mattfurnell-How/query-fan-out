@@ -156,7 +156,7 @@ if st.sidebar.button("Run Fan-Out 🚀"):
             st.dataframe(df, use_container_width=True, height=(min(len(df), 20) + 1) * 35 + 3) # Dynamic height
 
             csv = df.to_csv(index=False).encode("utf-8")
-            st.download_button("📥 Download CSV", data=csv, file_name="qforia_output.csv", mime="text/csv")
+            st.download_button("📥 Download CSV", data=csv, file_name="howden_query_fan_out_output.csv", mime="text/csv")
         
         elif results is None: # Error occurred in generate_fanout
             # Error message is already displayed by generate_fanout
