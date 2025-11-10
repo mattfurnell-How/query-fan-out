@@ -224,7 +224,7 @@ if st.sidebar.button("Run Fan-Out 🚀"):
         st.dataframe(df, use_container_width=True, height=(min(len(df), 20) + 1) * 35 + 3)
 
         csv = df.to_csv(index=False).encode("utf-8")
-        st.download_button("📥 Download CSV", data=csv, file_name="qforia_output_bulk_with_routing.csv", mime="text/csv")
+        st.download_button("📥 Download CSV", data=csv, file_name="howden_query_fan_out_output_bulk_with_routing.csv", mime="text/csv")
     else:
         st.warning("No synthetic queries were generated.")
 
