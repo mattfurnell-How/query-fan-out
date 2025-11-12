@@ -5,13 +5,13 @@ import json
 import re
 
 # App config
-st.set_page_config(page_title="Howden Insurance e: Query Fan-Out Simulator for AI Engines", layout="wide")
+st.set_page_config(page_title="Howden Insurance: Query Fan-Out Simulator for AI Engines", layout="wide")
 st.title("🔍 Howden Insurance: Query Fan-Out Simulator for AI Engines")
 
 # Sidebar: API key input and query
 st.sidebar.header("Configuration")
 gemini_key = st.sidebar.text_input("Gemini API Key", type="password")
-user_query = st.sidebar.text_area("Enter your query", "Where's my nearest local insurance broker?", height=120)
+user_query = st.sidebar.text_area("Enter your query", "Who's the best local insurance broker in my area?", height=120)
 mode = st.sidebar.radio("Search Mode", ["AI Overview (simple)", "AI Mode (complex)"])
 
 # Configure Gemini
