@@ -4,8 +4,8 @@ import pandas as pd
 import json
 
 # App config
-st.set_page_config(page_title="Qforia", layout="wide")
-st.title("🔍 Qforia: Query Fan-Out Simulator for AI Surfaces")
+st.set_page_config(page_title="Howden Insurance: Query Fan-Out Simulator for AI Engines", layout="wide")
+st.title("🔍 Howden Insurance: Query Fan-Out Simulator for AI Engines")
 
 # Sidebar: API key input and query
 st.sidebar.header("Configuration")
